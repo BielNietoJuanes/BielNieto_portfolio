@@ -219,3 +219,58 @@ function setLanguage(lang) {
     card.querySelector('h3').textContent = title;
     card.querySelector('p').textContent = desc;
   });
+
+    // Project labels (Frontend, Backend, FullStack)
+  const projectLabels = {
+    en: ["Backend", "Frontend", "FullStack"],
+    es: ["Backend", "Frontend", "FullStack"],
+    ca: ["Backend", "Frontend", "FullStack"]
+  };
+  document.querySelectorAll('.project-label').forEach((el, idx) => {
+    el.textContent = projectLabels[lang][idx] || el.textContent;
+  });
+
+  // Project detail section
+  const detailTitles = {
+    en: "Project Overview",
+    es: "Resumen del Proyecto",
+    ca: "Resum del Projecte"
+  };
+  const detailDescs = {
+    en: `A comprehensive Formula 1 analytics platform that provides real-time race data, driver statistics, and team performance metrics.\nBuilt with modern web technologies to deliver an immersive racing experience.`,
+    es: `Plataforma integral de analítica de Fórmula 1 que ofrece datos de carrera en tiempo real, estadísticas de pilotos y métricas de rendimiento de equipos.\nConstruida con tecnologías web modernas para una experiencia de usuario inmersiva.`,
+    ca: `Plataforma integral d'analítica de Fórmula 1 que ofereix dades de cursa en temps real, estadístiques de pilots i mètriques de rendiment d'equips.\nConstruïda amb tecnologies web modernes per oferir una experiència immersiva.`
+  };
+  const detailBtns = {
+    en: ["Live Demo", "View Code"],
+    es: ["Demo en vivo", "Ver código"],
+    ca: ["Demo en viu", "Veure codi"]
+  };
+  const detailMeta = {
+    en: ["// Project Type", "// Duration", "// Team Size", "Web Application", "3 Months", "Solo Project"],
+    es: ["// Tipo de Proyecto", "// Duración", "// Equipo", "Aplicación Web", "3 Meses", "Proyecto Individual"],
+    ca: ["// Tipus de Projecte", "// Durada", "// Equip", "Aplicació Web", "3 Mesos", "Projecte Individual"]
+  };
+  // Título
+  const detailTitleEl = document.querySelector('.project-detail-title');
+  if (detailTitleEl) detailTitleEl.textContent = detailTitles[lang];
+  // Descripción
+  const detailDescEl = document.querySelector('.project-detail-desc');
+  if (detailDescEl) detailDescEl.textContent = detailDescs[lang];
+  // Botones
+  const detailBtnsEls = document.querySelectorAll('.project-detail-btn');
+  if (detailBtnsEls.length >= 2) {
+    detailBtnsEls[0].textContent = detailBtns[lang][0];
+    detailBtnsEls[1].textContent = detailBtns[lang][1];
+  }
+  // Meta
+  const metaDivs = document.querySelectorAll('.project-detail-meta > div');
+  if (metaDivs.length >= 3) {
+    metaDivs[0].innerHTML = `${detailMeta[lang][0]} <span>${detailMeta[lang][3]}</span>`;
+    metaDivs[1].innerHTML = `${detailMeta[lang][1]} <span>${detailMeta[lang][4]}</span>`;
+    metaDivs[2].innerHTML = `${detailMeta[lang][2]} <span>${detailMeta[lang][5]}</span>`;
+  }
+}
+
+// Inicializar idioma por defecto
+document.addEventListener('DOMContentLoaded', () => setLanguage(currentLang));
