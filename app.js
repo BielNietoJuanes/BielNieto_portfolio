@@ -21,3 +21,9 @@ tabButtons.forEach(btn => {
     btn.addEventListener('click', () => showTab(btn.dataset.tab));
 });
 
+// Navegación lateral en About Me
+const sideButtons = document.querySelectorAll('.side-btn');
+sideButtons.forEach(btn => {
+    btn.addEventListener('click', () => showTab(btn.dataset.tab));
+});
+
