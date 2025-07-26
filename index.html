@@ -1,0 +1,282 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biel Nieto Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">biel-nieto</div>
+        <button class="tab-btn" data-tab="home">_home</button>
+        <button class="tab-btn" data-tab="about-me">_about-me</button>
+        <button class="tab-btn" data-tab="projects">_projects</button>
+        <div class="navbar-lang" id="lang-dropdown">
+            lang_&gt;
+            <div class="lang-menu" id="lang-menu">
+                <div class="lang-option" data-lang="en">English</div>
+                <div class="lang-option" data-lang="ca">Català</div>
+                <div class="lang-option" data-lang="es">Español</div>
+            </div>
+        </div>
+        <button class="theme-toggle" title="Toggle theme">🌙</button>
+    </nav>
+    <main>
+        <section id="home" class="tab-content active">
+            <h2>Hi all, I am</h2>
+            <h1>Biel Nieto</h1>
+            <p class="subtitle">&gt; Web developer</p>
+            <pre>// my number
+const telephoneNum = <span class="highlight">+34 656 33 23 17</span>;
+// my e-mail
+const email = "bielnieto.formacion@gmail.com";
+// you can also see it on my Github page
+const githubLink = "https://github.com/Bielnieto";</pre>
+        </section>
+        <section id="about-me" class="tab-content">
+            <div class="about-sidebar">
+                <div class="profile-pic">200 x 200</div>
+                <div class="profile-info">
+                    <h3>Biel Nieto Juanes</h3>
+                    <p>Junior Frontend and Backend Developer</p>
+                </div>
+                <button class="side-btn" data-tab="skills">_Skills</button>
+                <button class="side-btn" data-tab="experience">_Experience</button>
+                <button class="side-btn" data-tab="education">_Education</button>
+            </div>
+            <div class="about-main-block">
+                <h2>About Me</h2>
+                <div class="about-group">
+                    <p class="about-desc">
+                        I'm Biel Nieto Juanes, a passionate Junior Frontend and Backend Developer with a strong interest in building modern, efficient, and user-friendly web applications. My journey in software development began with a curiosity for how technology shapes our daily lives, and quickly grew into a commitment to mastering both frontend and backend technologies.
+                        <br><br>
+                        I enjoy working with frameworks and tools such as React, NodeJS, Express, and MongoDB, always striving to write clean, maintainable code. I am comfortable collaborating in teams, but also thrive when working independently on challenging projects. My goal is to continuously learn and stay up-to-date with the latest trends in web development, while delivering solutions that make a real impact.
+                        <br><br>
+                        I am eager to take on new challenges, contribute to innovative projects, and grow as a developer in a dynamic environment.
+                    </p>
+                    </div>
+            </div>
+        </section>
+        <section id="skills" class="tab-content">
+            <div class="about-sidebar">
+                <div class="profile-pic">200 x 200</div>
+                <div class="profile-info">
+                    <h3>Biel Nieto Juanes</h3>
+                    <p>Junior Frontend and Backend Developer</p>
+                </div>
+                <button class="side-btn active" data-tab="skills">_Skills</button>
+                <button class="side-btn" data-tab="experience">_Experience</button>
+                <button class="side-btn" data-tab="education">_Education</button>
+            </div>
+            <div class="skills-main-block">
+                <h2>Skills</h2>
+                <div class="skills-group">
+                    <div class="skills-title">_speaking-languages</div>
+                    <div class="skills-badges">
+                        <div class="badge lang">Spanish <span>🇪🇸</span><div class="level">Level: Native</div></div>
+                        <div class="badge lang">Catalan <span>cat</span><div class="level">Level: Native</div></div>
+                        <div class="badge lang">English <span>🇬🇧</span><div class="level">Level: Advanced</div></div>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <div class="skills-title">_programing-languages</div>
+                    <div class="skills-badges">
+                        <div class="badge tech">JavaScript <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"></div>
+                        <div class="badge tech">Python <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+                        <div class="badge tech">PHP <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <div class="skills-title">_frontend</div>
+                    <div class="skills-badges">
+                        <div class="badge tech">React <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+                        <div class="badge tech">Laravel <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel"></div>
+                        <div class="badge tech">PUG <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pug/pug-original.svg" alt="PUG"></div>
+                        <div class="badge tech">HTML5 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div>
+                        <div class="badge tech">CSS3 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <div class="skills-title">_backend</div>
+                    <div class="skills-badges">
+                        <div class="badge tech">NodeJS <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"></div>
+                        <div class="badge tech">MongoDB <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"></div>
+                        <div class="badge tech">MySQL <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"></div>
+                        <div class="badge tech">Firebase <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"></div>
+                        <div class="badge tech">API Rest <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="API Rest"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="tab-content">
+            <div class="about-sidebar">
+                <div class="profile-pic">200 x 200</div>
+                <div class="profile-info">
+                    <h3>Biel Nieto Juanes</h3>
+                    <p>Junior Frontend and Backend Developer</p>
+                </div>
+                <button class="side-btn" data-tab="skills">_Skills</button>
+                <button class="side-btn active" data-tab="experience">_Experience</button>
+                <button class="side-btn" data-tab="education">_Education</button>
+            </div>
+            <div class="experience-main-block">
+                <h2>Experience</h2>
+                <div class="experience-group">
+                    <div class="experience-title">Golden-Hotels</div>
+                    <div class="experience-badges">
+                        <div class="badge exp">
+                            <span class="role">Backend Developer</span>
+                            <span class="company">Golden-Hotels</span>
+                            <span class="period">2024 - 2025</span>
+                        </div>
+                    </div>
+                    <ul class="exp-list">
+                        <li><span class="exp-dot"></span>Database management with<b>AzureAD</b></li>
+                        <li><span class="exp-dot"></span>Server and Network Administration</li>
+                        <li><span class="exp-dot"></span>Frameworks development with <b> </b><b>NodeJS</b></li>
+                    </ul>
+                    <div class="exp-soft">Software used: <span class="badge exp-soft">AzureAD</span> <span class="badge exp-soft">VS Code</span> <span class="badge exp-soft">Git</span> <span class="badge exp-soft">Microsoft</span></div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="tab-content">
+            <div class="about-sidebar">
+                <div class="profile-pic">200 x 200</div>
+                <div class="profile-info">
+                    <h3>Biel Nieto Juanes</h3>
+                    <p>Junior Frontend and Backend Developer</p>
+                </div>
+                <button class="side-btn" data-tab="skills">_Skills</button>
+                <button class="side-btn" data-tab="experience">_Experience</button>
+                <button class="side-btn active" data-tab="education">_Education</button>
+            </div>
+            <div class="education-main-block">
+                <h2>Education</h2>
+                <div class="education-group">
+                    <div class="education-title">GS Web application development</div>
+                    <div class="education-badges">
+                        <div class="badge edu">
+                            <span class="degree">GS Web application development</span>
+                            <span class="school">Escola Pia-Santa Anna</span>
+                            <span class="period">2023 - 2025</span>
+                        </div>
+                    </div>
+                    <ul class="edu-list">
+                        <li><span class="edu-dot"></span>JavaScript, Python, PHP</li>
+                        <li><span class="edu-dot"></span>React, Laravel, PUG, HTML5, CSS3</li>
+                        <li><span class="edu-dot"></span>NodeJS, MongoDB, MySQL, Firebase, API Rest</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="tab-content">
+            <div class="about-sidebar">
+                <div class="profile-pic">200 x 200</div>
+                <div class="profile-info">
+                    <h3>Biel Nieto Juanes</h3>
+                    <p>Junior Frontend and Backend Developer</p>
+                </div>
+                <button class="side-btn" data-tab="skills">_Skills</button>
+                <button class="side-btn" data-tab="experience">_Experience</button>
+                <button class="side-btn" data-tab="education">_Education</button>
+            </div>
+            <div class="projects-main-block">
+                <h2>Projects</h2>
+                <div class="projects-list">
+                    <div class="project-card">
+                        <span class="project-label">Backend</span>
+                        <img src="images/formula1.jpg" alt="Formula 1 API" class="project-img">
+                        <div class="project-content">
+                            <h3>Formula 1 API</h3>
+                            <p>API based on formula 1 for manage the pilots and scuderias</p>
+                            <div class="project-tags">
+                                <span class="badge project">NodeJS</span>
+                                <span class="badge project">MongoDB</span>
+                                <span class="badge project">Express</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn">View Details</button>
+                                <a href="https://github.com/Bielnieto/f-one_API-REST" class="github-link" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="project-label">Frontend</span>
+                        <img src="images/estudia.png" alt="EstudIA" class="project-img">
+                        <div class="project-content">
+                            <h3>EstudIA</h3>
+                            <p>Web application for students, where they can save their academic progress and can study together with a chatbot with two modes, exam or review.</p>
+                            <div class="project-tags">
+                                <span class="badge project">OpenAI</span>
+                                <span class="badge project">JavaScript</span>
+                                <span class="badge project">HTML</span>
+                                <span class="badge project">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn">View Details</button>
+                                <a href="#" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="project-label">FullStack</span>
+                        <img src="images/routeHunter.png" alt="RouteHunter" class="project-img">
+                        <div class="project-content">
+                            <h3>RouteHunter</h3>
+                            <p>Web application to share, explore and create routes for both cars and motorcycles, with different themes (historical, cultural, gastronomic routes, etc.).</p>
+                            <div class="project-tags">
+                                <span class="badge project">React</span>
+                                <span class="badge project">MongoDB</span>
+                                <span class="badge project">CSS</span>
+                                <span class="badge project">API Rest</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn">View Details</button>
+                                <a href="#" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project-detail" class="tab-content" style="display:none;">
+            <h2 class="project-detail-title">Project Overview</h2>
+            <div class="project-detail-container">
+                <div class="project-detail-info">
+                    <p class="project-detail-desc">
+                        A comprehensive Formula 1 analytics platform that provides real-time race data, driver statistics, and team performance metrics.<br>
+                        Built with modern web technologies to deliver an immersive racing experience.
+                    </p>
+                    <div class="project-detail-meta">
+                        <div>// Project Type <span>Web Application</span></div>
+                        <div>// Duration <span>3 Months</span></div>
+                        <div>// Team Size <span>Solo Project</span></div>
+                    </div>
+                    <div class="project-detail-actions">
+                        <a href="https://github.com/Bielnieto/f-one_API-REST" class="project-detail-btn live" target="_blank" rel="noopener">Live Demo</a>
+                        <a href="https://github.com/Bielnieto/f-one_API-REST" class="project-detail-btn code" target="_blank" rel="noopener">View Code</a>
+                    </div>
+                </div>
+                <div class="project-detail-card">
+                    <img src="images/formula1.jpg" alt="Formula 1 API" class="project-detail-img">
+                    <div class="project-detail-tags">
+                        <span class="badge project">NodeJS</span>
+                        <span class="badge project">MongoDB</span>
+                        <span class="badge project">Express</span>
+                        <span class="badge project json"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="json" style="width:18px;vertical-align:middle;margin-right:4px;">JSON</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>Find-me-in:
+            <a href="https://www.instagram.com/niieetoo__" class="social instagram" target="_blank" rel="noopener"><_Instagram</a>
+            <a href="https://es.linkedin.com/" class="social linkedin" target="_blank" rel="noopener">_LinkedIn</a>
+            <a href="https://github.com/Bielnieto" class="social github" target="_blank" rel="noopener">_GitHub></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
